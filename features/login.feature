@@ -53,3 +53,10 @@ Scenario: Falha no login com senha em branco
     Then eu não consigo pressionar o botão de entrar
     And continuo na página de "Login"
     And o campo de senha fica em vermelho
+
+Scenario: Falha no login com e-mail incorreto
+    Given estou na página de "Login"
+    And não estou logado em nenhuma conta
+    And existe um usuário cadastrado com o e-mail “asv@cin.ufpe.br” e senha “123456” 
+    When eu preencho os campos com e-mail "josé" e senha "josezão"
+    Then aparece uma mensagem de falha no login
