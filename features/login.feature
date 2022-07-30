@@ -27,7 +27,7 @@ Scenario: Tentativa de login com senha incorreta
     And o campo da senha é preenchido por “123”
     Then aparece uma mensagem de falha no login
 
-Scenario: Redefinição de senha  
+Scenario: Redefinição de senha
 	Given não estou logado em nenhuma conta
     And existe um usuário cadastrado com o e-mail “asv@cin.ufpe.br” e senha “123456” 
     And estou na página de “Redefinição de senha”
@@ -36,3 +36,19 @@ Scenario: Redefinição de senha
     And o campo de código é preenchido por “1010”
     And o campo de nova senha é preenchido por “123”
     Then aparece uma mensagem de redefinição de senha realizada com sucesso
+
+Scenario: Falha no login com e-mail em branco
+    Given não estou logado em nenhuma conta
+    And estou na página de "Login"
+    When eu não preencho o campo de e-mail
+    And eu preencho o campo de senha com "123456"
+    Then eu não consigo pressionar o botão de entrar
+    And continuo na página de "Login"
+
+Scenario: Falha no login com senha em branco
+    Given não estou logado em nenhuma conta
+    And estou na página de "Login"
+    When eu preencho o campo de e-mail com "asv@cin.ufpe.br"
+    And eu não preencho o campo de senha
+    Then eu não consigo pressionar o botão de entrar
+    And continuo na página de "Login"
