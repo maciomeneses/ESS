@@ -8,4 +8,3 @@ Scenario: Registrando despacho do pedido inexistente
 	Given the system has no pedido "AAA12" 
 	When code "AAA12"is provided in the page "Despachar pedidos"
 	Then nothing is stored in the system 
-linha extra 
