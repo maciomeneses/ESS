@@ -52,3 +52,4 @@ Scenario: Falha no login com senha em branco
     And eu não preencho o campo de senha
     Then eu não consigo pressionar o botão de entrar
     And continuo na página de "Login"
+    And o campo de senha fica em vermelho
