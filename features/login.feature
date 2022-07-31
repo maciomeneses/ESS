@@ -61,3 +61,4 @@ Scenario: Falha no login com e-mail incorreto
     Then aparece uma mensagem de falha no login
 
 OPA!
+Segunda mudança!
