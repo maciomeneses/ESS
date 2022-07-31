@@ -59,3 +59,5 @@ Scenario: Falha no login com e-mail incorreto
     And existe um usuário cadastrado com o e-mail “asv@cin.ufpe.br” e senha “123456” 
     When eu preencho os campos com e-mail "josé" e senha "josezão"
     Then aparece uma mensagem de falha no login
+
+OPA!
