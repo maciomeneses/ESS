@@ -61,5 +61,3 @@ Scenario: Falha no login com e-mail incorreto
     When eu preencho os campos com e-mail "josé" e senha "josezão"
     Then aparece uma mensagem de falha no login
     And continuo na página de "Login"
-
-Nova mudança
