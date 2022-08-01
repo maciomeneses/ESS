@@ -17,4 +17,4 @@ Scenario: Registro de pedido já despachado -> Indicar o despacho de um pedido j
 	Then I am still on de "despachar pedidos" page
 	And I get a message informing pedido "LJ123" has already been sent 
 	And I can see pedido "LJ123" as "enviado"
-
+	And I can se one more number on "enviados" 
