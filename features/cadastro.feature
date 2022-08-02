@@ -83,5 +83,4 @@ When o usuário clicar no botão "Cadastrar"
 Then o usuário será direcionado para uma página "Cadastro finalizado com sucesso"
 And será exibida uma mensagem de sucesso no cadastro de fornecedor
 
-#
-# 
+#  
