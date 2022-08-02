@@ -37,3 +37,4 @@ Given o sistema conta com um registro de loja com o campo "CNPJ" com o valor "02
 When o sistema receber um request de "Cadastrar Loja" com um registro de loja com o campo "CNPJ" com o valor "02.359.075/0001"
 Then essa loja não será cadastrada
 And será enviada uma mensagem de erro para o cliente por ter o valor "02.359.075/0001" associado ao campo "CNPJ" já cadastrado no sistema
+# And nada a mais, essa linha só está aqui por causa do roteiro de ESS
