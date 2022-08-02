@@ -31,4 +31,5 @@ Scenario: Ver a quantidade de pedidos despachados -> Indicar a quantidade de ped
 	And I am on the "despachar pedidos" page
 	And I have pedido "LJ123" as "enviado"
 	When I ask the system to "mostrar pedidos enviados"
-	Then I get a list containing pedido "LJ123" 
+	Then I get a list containing pedido "LJ123"
+	And I can see the code for other pedidos with status "enviado" 
