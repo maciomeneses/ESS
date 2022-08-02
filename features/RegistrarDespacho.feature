@@ -33,3 +33,4 @@ Scenario: Ver a quantidade de pedidos despachados -> Indicar a quantidade de ped
 	When I ask the system to "mostrar pedidos enviados"
 	Then I get a list containing pedido "LJ123"
 	And I can see the code for other pedidos with status "enviado" 
+Modificaao 1 da master
