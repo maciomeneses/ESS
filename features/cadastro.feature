@@ -82,3 +82,5 @@ And o usuário deixou os campos "Facebook", "Instagram" e "Logo" em branco
 When o usuário clicar no botão "Cadastrar"
 Then o usuário será direcionado para uma página "Cadastro finalizado com sucesso"
 And será exibida uma mensagem de sucesso no cadastro de fornecedor
+
+# oi
